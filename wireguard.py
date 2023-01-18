@@ -25,7 +25,7 @@ url = url + "/citovoip/"
 print("citovoip url: " + url)
 
 print(" \n### UPDATE REDIRECT URL ###")
-new_url = requests.get("http://teleprojects.altervista.org/user1_update.php?url=" + url)
+new_url = requests.get("http://mysite/user1_update.php?url=" + url)
 if new_url.status_code == 200:
     print("Update OK!")
 else:
